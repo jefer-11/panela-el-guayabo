@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Clientes - Panela Orgánica del Guayabo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-panela-organica.png" alt="Panela Orgánica del Guayabo Logo">
+            </div>
+           <button class="hamburger-menu" aria-label="Abrir menú de navegación">
+                <i class="fas fa-bars"></i>
+            </button>
+<div class="nav-links-container"> 
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nuestra Historia</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="reseñas.html">Reseñas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Lo que Nuestros Clientes Dicen</h1>
+                <p>Tu experiencia es nuestra inspiración. Lee y comparte tu opinión sobre la Panela Orgánica del Guayabo.</p>
+            </div>
+        </section>
+
+        <section class="reviews-section container">
+            <div class="reviews-list">
+                <h2>Reseñas de Nuestros Clientes</h2>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">María G.</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"¡La mejor panela que he probado! Su sabor es increíblemente puro y me encanta saber que es 100% orgánica. La uso para todo, desde el café hasta mis postres. Súper recomendada."</p>
+                    <span class="review-date">10 de Mayo, 2025</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">Juan P.</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"La panela pulverizada es súper práctica. Se disuelve fácilmente y le da un toque delicioso a mis batidos. Estoy muy satisfecho con la calidad y el servicio de entrega."</p>
+                    <span class="review-date">05 de Mayo, 2025</span>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">Ana L.</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">"Realmente se siente la diferencia de un producto orgánico. Es dulce sin ser empalagoso y el aroma es delicioso. Además, me gusta mucho su compromiso con el medio ambiente."</p>
+                    <span class="review-date">28 de Abril, 2025</span>
+                </div>
+            </div>
+
+            <div class="add-review-section">
+                <h2>Comparte tu Reseña</h2>
+                <p>Ayúdanos a crecer y a que más personas descubran el sabor de la panela orgánica.</p>
+                <form class="review-form" data-netlify="true" name="review-submission">
+                    <div class="form-group">
+                        <label for="reviewerName">Tu Nombre:</label>
+                        <input type="text" id="reviewerName" name="reviewerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewerEmail">Tu Correo Electrónico (opcional):</label>
+                        <input type="email" id="reviewerEmail" name="reviewerEmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Tu Calificación:</label>
+                        <div class="stars-input" id="rating">
+                            <i class="far fa-star" data-value="1"></i>
+                            <i class="far fa-star" data-value="2"></i>
+                            <i class="far fa-star" data-value="3"></i>
+                            <i class="far fa-star" data-value="4"></i>
+                            <i class="far fa-star" data-value="5"></i>
+                            <input type="hidden" name="ratingValue" id="ratingValue" value="0">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Tu Comentario:</label>
+                        <textarea id="reviewText" name="reviewText" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Reseña</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <h2>¿Listo para endulzar tu vida de forma natural?</h2>
+                <a href="productos.html" class="btn primary-btn large-btn">Explora Nuestros Productos</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about-us">
+                    <h3>Panela Orgánica del Guayabo</h3>
+                    <p>El dulce sabor de la naturaleza pura. Comprometidos con la calidad, la tradición y tu bienestar.</p>
+                </div>
+                <div class="footer-section nav-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nuestra Historia</a></li>
+                        <li><a href="recetas.html">Recetas</a></li>
+                        <li><a href="reseñas.html">Reseñas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Contáctanos</h3>
+                    <p>Envío Gratuito en Bogotá</p>
+                    <p>¡Ponte en contacto para tu pedido!</p>
+                    <p><a href="tel:+573001234567">300 123 4567</a></p>
+                    <p><a href="mailto:info@paneladelguayabo.com">info@paneladelguayabo.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Panela Orgánica del Guayabo. Todos los derechos reservados.</p>
+                <div class="social-media">
+                    <a href="#"><img src="images/icon-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/icon-instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const starsInput = document.getElementById('rating');
+            const ratingValueInput = document.getElementById('ratingValue');
+            const stars = starsInput.querySelectorAll('.fa-star');
+
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const value = parseInt(star.dataset.value);
+                    ratingValueInput.value = value;
+                    updateStars(value);
+                });
+
+                star.addEventListener('mouseover', () => {
+                    const value = parseInt(star.dataset.value);
+                    highlightStars(value);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    updateStars(parseInt(ratingValueInput.value));
+                });
+            });
+
+            function updateStars(value) {
+                stars.forEach(star => {
+                    const starValue = parseInt(star.dataset.value);
+                    if (starValue <= value) {
+                        star.classList.remove('far');
+                        star.classList.add('fas');
+                    } else {
+                        star.classList.remove('fas');
+                        star.classList.add('far');
+                    }
+                });
+            }
+
+            function highlightStars(value) {
+                stars.forEach(star => {
+                    const starValue = parseInt(star.dataset.value);
+                    if (starValue <= value) {
+                        star.classList.remove('far');
+                        star.classList.add('fas');
+                    } else {
+                        star.classList.remove('fas');
+                        star.classList.add('far');
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

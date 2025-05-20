@@ -1,0 +1,19 @@
+{
+  "name": "panel-organica-del-guayabo",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.2.0"
+  }
+}
