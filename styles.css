@@ -45,6 +45,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 .container {
     max-width: 1200px;
